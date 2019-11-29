@@ -24,6 +24,10 @@ html, body {
   color: #888;
 }
 
+.container {
+  background: #e9faff !important;
+}
+
 .sp-wrap {
   display: none;
   line-height: 0;
