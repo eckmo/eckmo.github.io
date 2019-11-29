@@ -22,11 +22,7 @@ html, body {
   border-radius: 3px;
   font-size: 12px;
   color: #888;
-}
 
-.container {
-  background: #e9faff !important;
-}
 
 .sp-wrap {
   display: none;
