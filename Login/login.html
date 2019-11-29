@@ -1,23 +1,10 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Group 19">
-    <meta name="description" content="H2Open App page for CS 361">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Login</title>
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
-    <!--===============================================================================================-->
+	<title>Login V19</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -39,126 +26,67 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 </head>
+<body>
 
-<body data-spy="scroll" data-target="#primary-menu">
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-33">
+						Account Login
+					</span>
 
-    <div class="preloader">
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
-        </div>
-    </div>
-    <!--Mainmenu-area-->
-    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
-        <div class="container">
-            <!--Logo-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/index.html" class="navbar-brand logo">
-                    <h2>H2Open</h2>
-                </a>
-            </div>
-            <!--Logo/-->
-            <nav class="collapse navbar-collapse" id="primary-menu">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#home-page">Home</a></li>
-                    <li><a href="#service-page">Service</a></li>
-                    <li><a href="#feature-page">Features</a></li>
-                    <li><a href="#price-page">Pricing</a></li>
-                    <li><a href="#contact-page">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <!--Mainmenu-area/-->
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
 
+					<div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100-1"></span>
+						<span class="focus-input100-2"></span>
+					</div>
 
-    <!--Login portion-->
-    <div class="limiter">
-  		<div class="container-login100">
-  			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
-  				<form class="login100-form validate-form">
-  					<span class="login100-form-title p-b-33">
-  						Account Login
-  					</span>
+					<div class="container-login100-form-btn m-t-20">
+						<button class="login100-form-btn">
+							Sign in
+						</button>
+					</div>
 
-  					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-  						<input class="input100" type="text" name="email" placeholder="Email">
-  						<span class="focus-input100-1"></span>
-  						<span class="focus-input100-2"></span>
-  					</div>
+					<div class="text-center p-t-45 p-b-4">
+						<span class="txt1">
+							Forgot
+						</span>
 
-  					<div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
-  						<input class="input100" type="password" name="pass" placeholder="Password">
-  						<span class="focus-input100-1"></span>
-  						<span class="focus-input100-2"></span>
-  					</div>
+						<a href="#" class="txt2 hov1">
+							Username / Password?
+						</a>
+					</div>
 
-  					<div class="container-login100-form-btn m-t-20">
-  						<button class="login100-form-btn">
-  							Sign in
-  						</button>
-  					</div>
+					<div class="text-center">
+						<span class="txt1">
+							Create an account?
+						</span>
 
-  					<div class="text-center p-t-45 p-b-4">
-  						<span class="txt1">
-  							Forgot
-  						</span>
-
-  						<a href="#" class="txt2 hov1">
-  							Username / Password?
-  						</a>
-  					</div>
-
-  					<div class="text-center">
-  						<span class="txt1">
-  							Create an account?
-  						</span>
-
-  						<a href="#" class="txt2 hov1">
-  							Sign up
-  						</a>
-  					</div>
-  				</form>
-  			</div>
-  		</div>
-  	</div>
+						<a href="#" class="txt2 hov1">
+							Sign up
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 
-<!--Footer-->
-    <footer class="footer-area relative sky-bg" id="contact-page">
-        <div class="absolute footer-bg"></div>
-        <div class="footer-middle">
-            <div class="container">
-                <div class="row">
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 text-center">
-                        <p>&copy;Copyright 2019 All right resurved.  This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-
-    <!--===============================================================================================-->
+<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>
@@ -174,6 +102,6 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-</body>
 
+</body>
 </html>
