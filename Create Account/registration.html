@@ -66,17 +66,19 @@
                     <a class="text-center d-flex justify-content-center align-items-center align-content-center align-self-center" href="#">Already have an account? &nbsp;Log in</a>
                 </form>
                 <script>
-                    $('#createAcct').on('click','#submit', function(e){
-                        e.preventDefault();
-                        $.ajax({
-                            type: "POST",
-                            url: "registration.php",
-                            data: $('#createAcct').serialize(),
-                                success: function(data) {
-                                    alert(data);
-                                }
+                    $(document).ready(fucntion(){
+                        $('#createAcct').on('click','#submit', function(e){
+                            e.preventDefault();
+                            $.ajax({
+                                type: "POST",
+                                url: "registration.php",
+                                data: $('#createAcct').serialize(),
+                                    success: function(data) {
+                                        alert(data);
+                                    }
+                            });
+                            return false;
                         });
-                        return false;
                     });
                 </script>
             </div>
