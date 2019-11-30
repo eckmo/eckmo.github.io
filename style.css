@@ -372,7 +372,7 @@ input:-webkit-autofill:focus {
 }
 
 .anlge-bg {
-    background: url('https://i.imgur.com/gD4KTOZ.jpg') no-repeat scroll center bottom -120px / 100% auto;
+    background: url('https://i.imgur.com/vyH9gEQ.jpg') no-repeat scroll center bottom -120px / 100% auto;
 }
 
 .overlay {
@@ -642,7 +642,8 @@ input:-webkit-autofill:focus {
 ***/
 
 .price-area {
-    background: url('images/parallax-6.jpg') no-repeat scroll center center / cover
+    /*background: url('images/parallax-6.jpg') no-repeat scroll center center / cover*/
+    background-color: #479cc9;
 }
 
 .price-table h3 {
