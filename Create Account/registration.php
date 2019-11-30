@@ -8,9 +8,9 @@
     $con = mysqli_connect(HOST, USERNAME, PASSWORD, DB);
 
     $sql = “INSERT INTO user (email, username, password) VALUES ($email, $username, $password)”;
-    $email = $_POST['email'];
-    $username = $_POST['name'];
-    $password = $_POST['password'];
+    $email = htmlspecialchars($_POST['email']);
+    $username = htmlspecialchars($_POST['name']);
+    $password = htmlspecialchars($_POST['password']);
 
     if (mysqli_query($con, $sql)){
         echo 'success';
