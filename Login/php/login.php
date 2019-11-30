@@ -5,7 +5,7 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
 
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
+      $myusername = mysqli_real_escape_string($db,$_POST['email']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
       $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
@@ -27,7 +27,7 @@
       }
    }
 ?>
-<html>
+<!-- <html>
 
    <head>
       <title>Login Page</title>
@@ -72,4 +72,4 @@
       </div>
 
    </body>
-</html>
+</html> -->
