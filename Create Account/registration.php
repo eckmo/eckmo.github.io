@@ -1,18 +1,23 @@
-<!-- source: https://www.simplifiedcoding.net/php-mysql-insert-into-database-tutorial/ -->
 <?php
-    define('HOST','oniddb.cws.oregonstate.edu');
-    define('USERNAME', 'lambejoh-db');
-    define('PASSWORD','VuujWJEbf7hNieto');
-    define('DB','lambejoh-db');
+    $dbhost = 'oniddb.cws.oregonstate.edu';
+    $dbname = 'lambejoh-db';
+    $dbuser = 'lambejoh-db';
+    $dbpass = 'VuujWJEbf7hNieto';
 
-    $con = mysqli_connect(HOST, USERNAME, PASSWORD, DB);
+    $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+    if ($mysqli->connect_errno) {
+        echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    }
+    echo 'Successfully connected to database!';
 
     $sql = “INSERT INTO user (email, username, password) VALUES ($email, $username, $password)”;
     $email = htmlspecialchars($_POST['email']);
     $username = htmlspecialchars($_POST['name']);
     $password = htmlspecialchars($_POST['password']);
 
-    if (mysqli_query($con, $sql)){
-        echo 'success';
+    if (mysqli_query($mysqli, $sql)){
+        echo 'successfully added to the database';
     }
+
+    $mysqli->close();
  ?>
