@@ -642,7 +642,8 @@ input:-webkit-autofill:focus {
 ***/
 
 .price-area {
-    background: url('images/parallax-6.jpg') no-repeat scroll center center / cover
+    /*background: url('images/parallax-6.jpg') no-repeat scroll center center / cover*/
+    background-color: #479cc9;
 }
 
 .price-table h3 {
