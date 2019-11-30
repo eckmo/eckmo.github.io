@@ -65,31 +65,32 @@
                     <button class="btn btn-primary btn-block" type="submit" id="submit">Sign Up</button>
                     <a class="text-center d-flex justify-content-center align-items-center align-content-center align-self-center" href="#">Already have an account? &nbsp;Log in</a>
                 </form>
-                <script src="jquery/jquery-1.11.1.min.js"></script>
-                <script>
-                    $(document).ready(function(){
-                        $('#createAcct').on('click','#submit', function(e){
-                            e.preventDefault();
-                            $.ajax({
-                                type: "POST",
-                                url: "registration.php",
-                                data: $('#createAcct').serialize(),
-                                    success: function(data) {
-                                        alert(data);
-                                    }
-                            });
-                            return false;
-                        });
-                    });
-                </script>
             </div>
         </section>
     </main>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/smoothproducts.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="/assets/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#createAcct').on('click','#submit', function(e){
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "registration.php",
+                    data: $('#createAcct').serialize(),
+                        success: function(data) {
+                            alert(data);
+                        }
+                });
+                return false;
+            });
+        });
+    </script>
 </body>
 
 </html>
