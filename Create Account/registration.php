@@ -1,3 +1,6 @@
+<html>
+<body>
+
 <?php
     $dbhost = 'oniddb.cws.oregonstate.edu';
     $dbname = 'lambejoh-db';
@@ -15,9 +18,13 @@
     $username = htmlspecialchars($_POST['name']);
     $password = htmlspecialchars($_POST['password']);
 
+
     if (mysqli_query($mysqli, $sql)){
         echo 'successfully added to the database';
     }
 
     $mysqli->close();
  ?>
+ 
+</body>
+</html>
