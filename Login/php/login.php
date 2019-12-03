@@ -1,31 +1,31 @@
 <?php
-   include("config.php");
+   require 'config.php';
    session_start();
 
    if($_SERVER["REQUEST_METHOD"] == "POST") {
+
       // username and password sent from form
+      $myemail = mysqli_real_escape_string($db, $_POST['email']);
+      $mypassword = mysqli_real_escape_string($db, $_POST['password']);
+      $sql = "SELECT user_name FROM user WHERE email = '$myemail' and password = '$mypassword'";
 
-      $myusername = mysqli_real_escape_string($db,$_POST['email']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']);
-
-      $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['active'];
-
+      $result = mysqli_query($db, $sql);
       $count = mysqli_num_rows($result);
 
+
       // If result matched $myusername and $mypassword, table row must be 1 row
-
-      if($count == 1) {
-         session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
-
-         header("location: welcome.php");
+      if($count === 1) {
+         $row = mysqli_fetch_assoc($result);
+         $myname = $row['user_name'];
+         $_SESSION['login_user'] = $myname;
+         header("Location: welcome.php");
       }else {
-         $error = "Your Login Name or Password is invalid";
+         $error = "Your Email and/or Password is invalid";
+         echo $error;
       }
+      $result->close();
    }
+   $db->close();
 ?>
 <!-- <html>
 
