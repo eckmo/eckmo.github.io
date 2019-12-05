@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if (!isset($_SESSION['login_user'])){
+   header("Location: index.html");
+   exit;
+}
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -80,7 +88,7 @@
                 <div class="col-xs-12 col-md-7 header-text">
                     <h2>Welcome to your Dashboard.</h2>
                     <p>Here you'll find a map view of H2Open certified businesses in your area, in addition to analytics for each company's usage.</p>
-                    <a href="/Login/php/logout.php" class="button white">Logout</a>
+                    <a href="Login/php/logout.php" class="button white">Logout</a>
                 </div>
 
               <div class="col-md-5 text-right" id="gifdiv">
@@ -92,7 +100,6 @@
         </div>
     </header>
     <!--Header-area/-->
-
 
     <section class="gray-bg section-padding" id="faq-page">
         <div class="container">
@@ -209,10 +216,6 @@
         </div>
     </footer>
 
-
-
-
-
     <!--Vendor-JS-->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -228,3 +231,5 @@
 </body>
 
 </html>
+
+

@@ -37,34 +37,6 @@ CSS INDEX
 2. Theme Default CSS
 --------------------*/
 
-
-/*styling the welcome page
-#gif {
-    background: url('https://i.imgur.com/19o7SpQ.gifv') no-repeat scroll center bottom -120px / 100% auto;
-}*/
-
-#mapdiv {
-  text-align: center;
-}
-
-#mapz {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-#anayticsdiv {
-  text-align: center;
-}
-
-#analyticz {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 a {
     text-decoration: none;
     outline: none;
