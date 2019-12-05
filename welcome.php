@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 if (!isset($_SESSION['login_user'])){
    header("Location: index.html");
@@ -183,8 +183,8 @@ if (!isset($_SESSION['login_user'])){
                                 <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
                             </div>
                             <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
-                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
-                            <button type="sibmit" class="button">Submit</button>
+                            <textarea id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
+                            <button type="submit" class="button">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -231,5 +231,3 @@ if (!isset($_SESSION['login_user'])){
 </body>
 
 </html>
-
-
