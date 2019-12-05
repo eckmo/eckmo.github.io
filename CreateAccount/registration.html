@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="../images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
@@ -58,7 +62,7 @@
                     <h2 class="text-info">Register Now</h2>
                     <p>Enter your information below to register a new account with H2Open.</p>
                 </div>
-                <form id="createAcct">
+                <form id="createAcct" action="registration.php" method="POST">
                     <div class="form-group"><label for="name">Name</label><input class="form-control item" type="text" name="name" id="name" required></div>
                     <div class="form-group"><label for="password">Password</label><input class="form-control item" type="password" name="password" id="password" required ></div>
                     <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" name="email" id="email" required></div>
