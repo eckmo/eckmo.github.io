@@ -18,7 +18,7 @@
          $row = mysqli_fetch_assoc($result);
          $myname = $row['user_name'];
          $_SESSION['login_user'] = $myname;
-         header("Location: welcome.php");
+         header("Location: ../../welcome.html");
       }else {
          $error = "Your Email and/or Password is invalid";
          echo $error;
