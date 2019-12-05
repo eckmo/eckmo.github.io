@@ -20,8 +20,7 @@
          $_SESSION['login_user'] = $myname;
          header("Location: ../../welcome.html");
       }else {
-         $error = "Your Email and/or Password is invalid";
-         echo $error;
+         header("Location: ../loginErr.html")
       }
       $result->close();
    }
